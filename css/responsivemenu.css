@@ -188,7 +188,7 @@
 .banner-info {
 	position: absolute;
 	top:28%;
-	background-color: rgba(146, 43, 44, 0.68);
+	background-color: rgba(134, 188, 66, 0.58);
 	padding: 4em 7em;
 	z-index: 999;
 	right: 0
@@ -209,7 +209,7 @@ ul#slider4 h4 {
 	color: #fff;
 	width: 38%;
 	line-height: 1.7em;
-	border-left: 8px solid #B73C3D;
+	border-left: 8px solid #86bc42;
 	padding-left: 15px;
 }
 .banner-info p {

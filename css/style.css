@@ -249,17 +249,18 @@ nav ul {
 }
 .mobile-menu-area {
     background: #2d3e50 none repeat scroll 0 0;
-    display: none;
+    display: none;   
 }
-.mean-container .mean-bar {
-    background: transparent none repeat scroll 0 0;
-    float: left;
-    min-height: 42px;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    z-index: 9;
+.mean-container .mean-bar:before {
+    color: #fff;
+    content: "MENU";
+    font-size: 18px;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+    top: 13px;
 }
+ 
 /*-- header --*/
 .logo{
 	padding-left: 0px;
@@ -280,7 +281,7 @@ nav ul {
     overflow: hidden;
     position: absolute;
     right: 0;
-    top: 119px;
+    top: 82px;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     -webkit-transition-property: height;
@@ -320,6 +321,12 @@ nav ul {
     top: 0;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+}
+.search-form input[type="search"] {
+    border: medium none;
+    float: left;
+    background: transparent;
+    font-size: 24px;
 }
 /* start menu */
 .header-site nav {
@@ -1420,12 +1427,15 @@ p.w3l-agile-its-title.second {
 	.container {
 		width: auto;
 	}
+    .mobile-menu-area{
+        display: block;
+    }
+    .mobile-menu-area .container{
+        width: 750px;
+    }
     .logo {
         padding: 40px 0 33px;
         text-align: center;
-    }
-    .mobile-menu-area {
-        display: block;
     }
     .header-secondary .container {
         width: 750px;
@@ -1460,6 +1470,9 @@ p.w3l-agile-its-title.second {
     .container {
 		width: auto;
 	}
+    .mobile-menu-area{
+        display: block;
+    }
     .course-area .container,.latest-area .container,.product-area .container {
         width: 450px;
     }

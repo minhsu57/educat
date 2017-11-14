@@ -32,6 +32,7 @@
 	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- start menu -->
 	<link href="css/responsivemenu.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="meanmenu/meanmenu.css" media="all" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- slider plugin -->
 
@@ -116,13 +117,13 @@
 								<a class="responsive-nav" data-toggle="#off-canvas-right" data-toggle-class="open">
 									<span class="l-menu"></span>
 								</a>
-								<ul class="header-search">
+								<ul class="header-search" id="searchbutton">
 									<li class="search-menu">
 										<i class="material-icons">&#xE8FA;</i>
 										<i class="zmdi zmdi-close close hidden"></i>
 									</li>
 								</ul>
-								<div class="search open">
+								<div class="search" id="searchlink">
 									<div class="search-form">
 										<form id="search-form" action="#">
 											<input type="search" placeholder="Search here..." name="search">
@@ -140,79 +141,39 @@
 			</div>
 			<!-- Mobile Menu Area start -->
 			<div class="mobile-menu-area">
-				<div class="container mean-container">
-					<div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="background:;color:;right:0;left:auto;"><span></span><span></span><span></span></a>
-						<nav
-						 class="mean-nav">
-							<ul style="display: none;">
-								<li><a href="index.html">HOME</a>
-									<ul style="display: none;">
-										<li><a href="index.html">Slider Style 1</a></li>
-									</ul>
-									<a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="courses.html">Courses</a>
-									<ul class="sub-menu" style="display: none;">
-										<li><a href="courses-details.html">Courses Details</a></li>
-									</ul>
-									<a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-								<li><a href="shop-grid.html">Shop</a>
-									<ul class="sub-menu" style="display: none;">
-										<li><a href="product-details.html">Product Details</a></li>
-									</ul>
-									<a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-								<li><a href="event.html">Event</a>
-									<ul class="sub-menu" style="display: none;">
-										<li><a href="event-details.html">Event Details</a></li>
-									</ul>
-									<a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-								<li><a href="latest-news.html">Latest News</a>
-									<ul class="sub-menu" style="display: none;">
-										<li><a href="news-details.html">News Details</a></li>
-									</ul>
-									<a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-								<li class="mean-last"><a href="contact.html">Contact us</a></li>
-							</ul>
-							</nav>
-					</div>
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<div class="mobile-menu">
-								<div class="mean-push"></div>
-								<nav id="dropdown" style="display: none;">
-									<ul>
-										<li><a href="index.html">HOME</a>
-											<ul>
-												<li><a href="index.html">Slider Style 1</a></li>
-											</ul>
-										</li>
-										<li><a href="about.html">About Us</a></li>
-										<li><a href="courses.html">Courses</a>
-											<ul class="sub-menu">
-												<li><a href="courses-details.html">Courses Details</a></li>
-											</ul>
-										</li>
-										<li><a href="shop-grid.html">Shop</a>
-											<ul class="sub-menu">
-												<li><a href="product-details.html">Product Details</a></li>
-											</ul>
-										</li>
-										<li><a href="event.html">Event</a>
-											<ul class="sub-menu">
-												<li><a href="event-details.html">Event Details</a></li>
-											</ul>
-										</li>
-										<li><a href="latest-news.html">Latest News</a>
-											<ul class="sub-menu">
-												<li><a href="news-details.html">News Details</a></li>
-											</ul>
-										</li>
-										<li><a href="contact.html">Contact us</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
+				<div class="container">
+					<nav>
+						<ul>
+							<li><a href="#">Top Level Link</a>
+								<ul>
+									<li><a href="#">Second Level Link</a>
+										<ul>
+											<li><a href="#">Third Level Link</a></li>
+											<li><a href="#">Third Level Link</a></li>
+											<li><a href="#">Third Level Link</a>
+												<ul>
+													<li><a href="#">Fourth Level Link</a></li>
+													<li><a href="#">Fourth Level Link</a></li>
+													<li><a href="#">Fourth Level Link with extra long name so it wraps</a>
+														<ul>
+															<li><a href="#">Fifth Level Link</a></li>
+															<li><a href="#">Fifth Level Link</a></li>
+															<li><a href="#">Fifth Level Link</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li><a href="#">Second Level Link</a></li>
+									<li><a href="#">Second Level Link</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Top Level Link</a></li>
+							<li><a href="#">Top Level Link</a></li>
+							<li><a href="#">Top Level Link</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 			<!-- Mobile Menu Area end -->
@@ -931,7 +892,23 @@
 
 		});
 	</script>
+	<script>
+		var $searchbutton = $('#searchbutton');
+		$searchbutton.on('click', function (e) {
+			if ($("#searchlink").hasClass('open')) {
+				$("#searchlink").removeClass('open');
+			} else {
+				$("#searchlink").addClass('open');
+			}
+		});
+	</script>
 	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+	<script src="meanmenu/jquery.meanmenu.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.mobile-menu-area nav').meanmenu();
+		});
+	</script>
 </body>
 
 </html>

@@ -66,9 +66,6 @@ img {
 .button-default.button-large:hover {
     background: #2d3e50 none repeat scroll 0 0;
 }
-.breadcrumb{
-	margin:2em 0;
-}
 .container {
     width: 1200px;
 }
@@ -414,7 +411,7 @@ nav ul {
     clear: both;
     display: block;
     width: 180px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     border: none;
 }
 .nav li:hover > .sub-menu, .nav li:hover > .children {
@@ -505,7 +502,7 @@ nav ul {
 .about-area {
     background: rgba(0, 0, 0, 0) url(../images/banner/1.jpg) no-repeat scroll center top;
     color: #ffffff;
-    margin-top: 140px;
+    margin-top: 120px;
     padding-bottom: 54px;
     position: relative;
 }
@@ -1169,7 +1166,7 @@ p.w3l-agile-its-title.second {
     color: #4c4c4c;
 }
 .single-event-text > h3 {
-    font-family: "montserratregular";
+    font-family: 'Raleway', sans-serif;
     margin-bottom: 5px;
 }
 .single-event-text > h3 a, .single-event-text > h3 {
@@ -1218,7 +1215,7 @@ p.w3l-agile-its-title.second {
     position: relative;
 }
 .newsletter-content h2, .newsletter-content h3 {
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 30px;
 }
@@ -1262,7 +1259,7 @@ p.w3l-agile-its-title.second {
 }
 .subscribe-form > button {
     border: 2px solid #86bc42;
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     height: 100%;
     position: absolute;
@@ -1271,6 +1268,10 @@ p.w3l-agile-its-title.second {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     width: 34%;
+}
+.subscribe-form > button:hover {
+    background: #FFF;
+    border: 2px solid #86bc42;
 }
 /*End newsletter area*/
 /*Footer widget area*/
@@ -1364,7 +1365,7 @@ p.w3l-agile-its-title.second {
     bottom: 0;
     color: #ffffff;
     content: "+";
-    font-family: "montserratregular";
+    font-family: 'Raleway', sans-serif;
     font-size: 40px;
     height: 18px;
     left: 0;
@@ -1395,6 +1396,81 @@ p.w3l-agile-its-title.second {
 .column-right {
     float: right;
 }
+/*Course page*/
+.course-page {
+    padding-top: 154px;
+}
+.course-page .single-item {
+    margin-bottom: 128px;
+}
+.breadcrumb-banner-area:after {
+    background: rgba(45, 62, 80, 0.8) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.breadcrumb-banner-area {
+    background: rgba(0, 0, 0, 0) url(../images/banner/4.jpg) no-repeat scroll 0 0;
+    color: #ffffff;
+    padding: 110px 0;
+    position: relative;
+}
+.breadcrumb-text {
+    z-index: 9;
+    position: relative;
+}
+.breadcrumb-text h1 {
+    /*line-height: 25px;*/
+    padding-bottom: 51px;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 36px;
+}
+.breadcrumb-text h1:after {
+    background: #ffffff none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    height: 29px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 2px;
+}
+.breadcrumb-bar .breadcrumb {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    line-height: 12px;
+    margin-bottom: 0;
+    padding: 15px 0 0;
+}
+.breadcrumb-bar li {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 16px;
+    position: relative;
+    text-transform: uppercase;
+}
+.breadcrumb-bar li {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+}
+.breadcrumb-bar a {
+    color: #ffffff;
+}
+
+/*End course page*/
 /****************************************/
 /*Mobile - tablet - responsive*/
 /****************************************/
@@ -1411,6 +1487,9 @@ p.w3l-agile-its-title.second {
     .single-latest-text > h3 {
         font-size: 19px;
         height: 22px;
+    }
+    .course-page .single-item {
+        margin-bottom: 130px;
     }
     h3.agile_title {
         font-size: 2em;
@@ -1429,9 +1508,6 @@ p.w3l-agile-its-title.second {
 	}
     .mobile-menu-area{
         display: block;
-    }
-    .mobile-menu-area .container{
-        width: 750px;
     }
     .logo {
         padding: 40px 0 33px;
@@ -1470,6 +1546,12 @@ p.w3l-agile-its-title.second {
     .container {
 		width: auto;
 	}
+    .header-secondary::before {
+        width: 91%;
+    }
+    .header-secondary::after {
+        right: 91%;
+    }
     .mobile-menu-area{
         display: block;
     }
@@ -1478,7 +1560,7 @@ p.w3l-agile-its-title.second {
     }
 	.about-area {
 		background: #2D3E50;
-		margin-top: 80px;
+		margin-top: 60px;
 	}
 	.about-area {
 		background-position: left top;
@@ -1625,8 +1707,18 @@ p.w3l-agile-its-title.second {
     .column-right {
         float: none;
     }
+    .breadcrumb-banner-area {
+        padding: 60px 0;
+    }
+    .breadcrumb-text h1 {
+        line-height: 37px;
+        font-size: 32px;
+    }
 }
 @media (max-width: 480px){
+    .hidden-480{
+        display: none !important;
+    }
     .container{
         width: auto;
     }

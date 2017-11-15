@@ -87,7 +87,7 @@
  .callbacks_nav.prev {
 	right: auto;
 	background-position:left top;
-	left: 91%;
+	left: 90.5%;
 }
 #slider3-pager a {
 	display: inline-block;
@@ -242,7 +242,7 @@ ul#slider4 h4 {
 	.callbacks_nav {
 		position: absolute;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
-		top: 79.7%;
+		top: 68%;
 		}
 		.callbacks_nav.next {
 		left: auto;
@@ -252,7 +252,7 @@ ul#slider4 h4 {
 	.callbacks_nav.prev {
 		right: auto;
 		background-position: left top;
-		    left: 89.1%;
+		left: 87.1%;
 	}
 }
 @media (max-width:800px){
@@ -275,7 +275,7 @@ ul#slider4 h4 {
 	.callbacks_nav {
 		position: absolute;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
-		top: 76.1%;
+		top: 60.1%;
 	}
 	.callbacks_nav.next {
 		left: auto;
@@ -285,7 +285,7 @@ ul#slider4 h4 {
 	.callbacks_nav.prev {
 		right: auto;
 		background-position: left top;
-		left: 85.8%;
+		left: 83.8%;
 	}
 }
 /*-- sticky-nav --*/
@@ -323,15 +323,15 @@ ul#slider4 h4 {
 	.callbacks_nav {
 		position: absolute;
 		-webkit-tap-highlight-color: rgba(0,0,0,0);
-		top:82.6%;
+		top:70%;
 		width: 4%;
-        height: 9%;
+        height: 100%;
 	    background: transparent url("../images/arrow2.png") no-repeat left top;
 	}
 	.callbacks_nav.prev {
 		right: auto;
 		background-position: left top;
-		left: 92.1%;
+		left: 90.5%;
 	}
 	.callbacks_nav.next {
 		left: auto;
@@ -364,15 +364,15 @@ ul#slider4 h4 {
 		padding-left: 15px;
 	}
 	.callbacks_nav {
-		top:79.99%;
+		top:62.99%;
 		width: 6%;
-		height: 11%;
+		height: 100%;
 		background: transparent url("../images/arrow2.png") no-repeat left top;
 	}
 	.callbacks_nav.prev {
 		right: auto;
 		background-position: left top;
-		left: 88.1%;
+		left: 86.3%;
 	}
 	.callbacks_nav.next {
 		left: auto;

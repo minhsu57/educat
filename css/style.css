@@ -19,6 +19,13 @@ body a{
 a:hover,a:active,a:focus{
 	text-decoration: none;
 }
+h4.title {
+    color: #4c4c4c;
+    font-size: 24px;
+    margin-bottom: 27px;
+    padding-bottom: 10px;
+    position: relative;
+}
 @font-face {
    font-family: 'Merienda-Regular';
    src: url(../fonts/Merienda-Regular.ttf)format('truetype');
@@ -74,6 +81,9 @@ img {
 }
 .header-top:before, .about-area:before, .newsletter-area:before, .mainmenu ul#nav > li > a:after, .mainmenu ul#nav.menu-white > li > a:after, .search-menu, .button-default:hover, .button-green, .about-area .button-default, .single-item .button-default, .button-large.button-default, .single-latest-item .button-default, .single-product-text .button-default, .single-event-item .button-default, .subscribe-form > button, .social-icons > a:hover, .footer-area, .newsletter-two, .pagination-content.number .pagination li a:hover, .pagination-content.number .pagination li.current a, .pagination-content.number .pagination li:first-child a, .pagination-content.number .pagination li:last-child a, .product-details-content .button-default, .product-details-content .social-links a:hover, .duration-title, h4.title:after, .tution-fee, .single-sidebar-widget .social-links a:hover, .single-sidebar-widget .tags li a:hover, .pagination-content .pagination, .news-details-content .social-links a:hover, .contact-form-area .button-default, .skill-bar-item .progress-bar, #scrollUp, .bg-green, .bg-blue:hover, .preview-2 .nivo-directionNav a.nivo-prevNav:hover::before, .preview-2 .nivo-directionNav a.nivo-nextNav:hover::before, .slider-three .preview-2 .nivo-controlNav a, .footer-widget-area.footer-widget-four {
     background: #86bc42;
+}
+.search-form, .single-item, .single-latest-text, .single-product-text, .single-event-text, .subscribe-form > button, .subscribe-form > button:hover, .pagination-content.number .pagination li a, .subscribe-form > button, .subscribe-form > button:hover, .pagination-content.number .pagination li a, .pagination-content.number .pagination li a:hover, .pagination-content.number .pagination li.current a, .product-details-content .social-links a:hover, .single-teacher-text, .single-course-details, .course-duration .text, .tutor-image > img, .single-sidebar-widget .social-links a:hover, .single-sidebar-widget .tags li a:hover, .single-sidebar-widget .single-item, .event-details-content .single-event-item, .recent-content-item > a, .quote-section, .news-details-content .social-links a:hover, .shortcode-area i, .shortcode-area h3, .border-green, .slider-three .nivo-controlNav a.active:before, .slider-three .nivo-controlNav a:hover:before {
+    border-color: #86bc42;
 }
 .header-top:before, .about-area:before, .newsletter-area:before {
     content: "";
@@ -1469,8 +1479,146 @@ p.w3l-agile-its-title.second {
 .breadcrumb-bar a {
     color: #ffffff;
 }
-
 /*End course page*/
+/*News details page*/
+.news-details-content .single-latest-text {
+    padding: 75px 72px 0;
+}
+.news-details-content .single-latest-text > h3 {
+    color: #616161;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.news-details-content .single-latest-item .single-item-comment-view {
+    margin-bottom: 8px;
+}
+.news-details-content .single-latest-text p {
+    color: #4c4c4c;
+    line-height: 23px;
+    margin-bottom: 23px;
+}
+.tags-and-links {
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 50px;
+}
+.related-tag, .news-details-content .social-links > span {
+    color: #4c4c4c;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+}
+.related-tag .tags {
+    display: inline-block;
+}
+.related-tag .tags li {
+    display: inline-block;
+}
+.related-tag .tags li a {
+    color: #898989;
+}
+.news-details-content .social-links {
+    display: inline-block;
+    float: right;
+    margin-right: 47px;
+    position: inherit;
+    width: auto;
+}
+.news-details-content .social-links > span {
+    margin-right: 11px;
+}
+.social-links > a {
+    border: 1px solid #2d3e50;
+    border-radius: 50%;
+    color: #2d3e50;
+    display: inline-block;
+    font-size: 14px;
+    height: 27px;
+    line-height: 25px;
+    margin: 0 3px;
+    text-align: center;
+    width: 27px;
+}
+.news-details-content .social-links > a {
+    font-size: 13px;
+    height: 23px;
+    line-height: 21px;
+    margin: 0 2px;
+    width: 23px;
+}
+.single-sidebar-widget {
+    margin-bottom: 62px;
+    overflow: hidden;
+}
+.single-sidebar-widget h4.title {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.single-sidebar-widget h4.title:after {
+    bottom: 1px;
+}
+h4.title:after {
+    bottom: 2px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 73px;
+}
+.recent-content-item {
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+.recent-content-item > a {
+    border: 1px solid #86bc42;
+    display: inline-block;
+    float: left;
+}
+.recent-text {
+    overflow: hidden;
+    padding-left: 20px;
+}
+.recent-text > h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.recent-text > h4 a {
+    color: #6b6b6b;
+}
+.recent-text .single-item-comment-view {
+    display: block;
+}
+.recent-text .single-item-comment-view > span {
+    color: #b2b2b2;
+    font-size: 11px;
+    line-height: 12px;
+    margin-right: 13px;
+}
+.recent-text .single-item-comment-view i {
+    font-size: 13px;
+}
+.recent-text > p {
+    color: #6b6b6b;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+}
+.single-sidebar-widget .tags li a {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #4c4c4c;
+    color: #4c4c4c;
+    float: left;
+    margin-bottom: 13px;
+    margin-right: 6px;
+    padding: 1px 9px;
+}
+.single-sidebar-widget .tags li a:hover {
+    color: #fff;
+}
+.shop-grid-area .single-product-item {
+    margin-bottom: 60px;
+}
 /****************************************/
 /*Mobile - tablet - responsive*/
 /****************************************/
@@ -1500,6 +1648,9 @@ p.w3l-agile-its-title.second {
     .footer-img {
         height: 59px;
         width: 59px;
+    }
+    .news-details-content .single-latest-text {
+        padding: 35px 27px 0;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){
@@ -1537,6 +1688,9 @@ p.w3l-agile-its-title.second {
         width: 62px;
     }
     /*end footer widget area*/
+    .news-details-content .single-latest-text {
+        padding: 35px 30px 0;
+    }
 }
 @media (max-width: 767px){
     .logo {
@@ -1555,7 +1709,7 @@ p.w3l-agile-its-title.second {
     .mobile-menu-area{
         display: block;
     }
-    .course-area .container,.latest-area .container,.product-area .container {
+    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container {
         width: 450px;
     }
 	.about-area {
@@ -1714,6 +1868,14 @@ p.w3l-agile-its-title.second {
         line-height: 37px;
         font-size: 32px;
     }
+    .news-details-content .single-latest-text {
+        padding: 21px 13px 0;
+    }
+    .news-details-content .social-links {
+        display: block;
+        float: left;
+        margin: 0;
+    }
 }
 @media (max-width: 480px){
     .hidden-480{
@@ -1725,7 +1887,7 @@ p.w3l-agile-its-title.second {
     .footer-widget-area .container{
         width: 300px;
     }
-    .course-area .container,.latest-area .container,.product-area .container {
+    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container  {
         width: auto;
     }
     /*--flexisel--*/

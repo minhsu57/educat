@@ -226,6 +226,9 @@ nav ul {
 .social {
 	display: inline-block;
 }
+.social-links > a:hover {
+    color: #ffffff;
+}
 .top_right ul li:last-child{
 	margin-right: 0;
 }

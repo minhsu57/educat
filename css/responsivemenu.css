@@ -222,7 +222,7 @@ ul#slider4 h4 {
 	.banner-info {
 		position: absolute;
 		top: 28%;
-		background-color: rgba(146, 43, 44, 0.68);
+		background-color: #86bc42;
 		padding: 3em 7em;
 		z-index: 999;
 		right: 0;
@@ -236,7 +236,7 @@ ul#slider4 h4 {
 		color: #fff;
 		width: 38%;
 		line-height: 1.7em;
-		border-left: 8px solid #B73C3D;
+		border-left: 8px solid #86bc42;
 		padding-left: 15px;
 	}
 	.callbacks_nav {
@@ -267,7 +267,7 @@ ul#slider4 h4 {
 	.banner-info {
 		position: absolute;
 		top: 28%;
-		background-color: rgba(146, 43, 44, 0.68);
+		background-color: #86bc42;
 		padding: 2em 4em;
 	}
 	ul#slider4 h4 {
@@ -277,7 +277,7 @@ ul#slider4 h4 {
 		font-size: 1.8em;
 		width: 45%;
 		line-height: 1.7em;
-		border-left: 6px solid #B73C3D;
+		border-left: 6px solid #86bc42;
 		padding-left: 15px;
 	}
 	.callbacks_nav {
@@ -319,13 +319,13 @@ ul#slider4 h4 {
 		font-size: 1.5em;
 		width: 40%;
 		line-height: 1.7em;
-		border-left: 5px solid #B73C3D;
+		border-left: 5px solid #86bc42;
 		padding-left: 15px;
 	}
 	.banner-info {
 		position: absolute;
 		top: 28%;
-		background-color: rgba(146, 43, 44, 0.68);
+		background-color: #86bc42;
 		padding: 2em 2em;
 	}
 	.banner-info h3 {
@@ -354,7 +354,7 @@ ul#slider4 h4 {
 	.banner-info {
 		position: absolute;
 		top: 28%;
-		background-color: rgba(146, 43, 44, 0.68);
+		background-color: #86bc42;
 		padding: 1em 1em;
 	}
 	.banner-info h3 {
@@ -371,7 +371,7 @@ ul#slider4 h4 {
 		font-size: 1.3em;
 		width: 52%;
 		line-height: 1.7em;
-		border-left: 5px solid #B73C3D;
+		border-left: 5px solid #86bc42;
 		padding-left: 15px;
 	}
 	.callbacks_nav {
@@ -421,7 +421,7 @@ ul#slider4 h4 {
 	.banner-info {
 		position: absolute;
 		top: 19%;
-		background-color: rgba(146, 43, 44, 0.68);
+		background-color: #86bc42;
 		padding: 0.7em 0.7em;
 	}
 }

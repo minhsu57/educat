@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6 {margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700}
+h1, h2, h3, h4, h5, h6 {margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 700; line-height: 1.5;}
 ul, ol {list-style: outside none none; margin: 0; padding:0;}
 html, body{
     color: #222222;
@@ -529,6 +529,9 @@ nav ul {
 .about-container {
     margin-left: 70px;
 }
+.about-page-area .about-text-container {
+    color: #555;
+}
 .about-area h3 {
     font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
@@ -801,8 +804,6 @@ nav ul {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    height: 25px;
-    overflow-y: hidden;
 }
 .single-latest-text > h3 a {
     color: #2d3e50;
@@ -1571,7 +1572,6 @@ p.w3l-agile-its-title.second {
     background: #7a9757 none repeat scroll 0 0;
     border-color: #7a9757;
 }
-style.css:1858
 .social-links > a:hover {
     color: #ffffff;
 }
@@ -1589,7 +1589,7 @@ style.css:1858
 .single-sidebar-widget h4.title {
     font-size: 18px;
     margin-bottom: 25px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .single-sidebar-widget h4.title:after {
     bottom: 1px;
@@ -1880,6 +1880,7 @@ span.comment-time {
 .single-teacher-item {
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.2);
     position: relative;
+    margin-bottom: 20px;
 }
 .single-teacher-item:hover .single-teacher-text {
     margin-top: -45px;
@@ -1920,6 +1921,9 @@ span.comment-time {
 .single-teacher-item:hover .single-teacher-text > h3 {
     padding-top: 0;
 }
+.single-teacher-image > a img, .single-teacher-image > a {
+    width: 100%;
+}
 .single-teacher-image > a:after {
     content: "";
     height: 100%;
@@ -1949,6 +1953,145 @@ span.comment-time {
     line-height: 15px;
 }
 /*End course detail*/
+/*Contact form area*/
+.contact-form-area {
+    color: #4c4c4c;
+}
+h4.contact-title {
+    color: #4c4c4c;
+    font-family: "montserratbold";
+    font-size: 24px;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-text {
+    margin-bottom: 75px;
+}
+.contact-text > p {
+    line-height: 24px;
+    margin-bottom: 9px;
+}
+.contact-text i {
+    font-size: 18px;
+}
+span.c-icon i {
+    position: relative;
+    top: 3px;
+    width: 27px;
+}
+span.c-icon {
+    display: inline-block;
+    float: left;
+}
+span.c-text {
+    display: inline-block;
+}
+.link-social > a {
+    color: #4c4c4c;
+    display: inline-block;
+    line-height: 19px;
+    margin-right: 27px;
+}
+.link-social > a i {
+    font-size: 20px;
+}
+.contact-form-area input, .contact-form-area textarea {
+    background: #f1f1f1 none repeat scroll 0 0;
+    border: 0 none;
+    color: #777777;
+    font-size: 14px;
+    height: 48px;
+    margin-bottom: 23px;
+    padding: 0 23px;
+    width: 100%;
+}
+.contact-form-area textarea {
+    height: 150px;
+    padding-top: 13px;
+    resize: none;
+}
+.contact-form-area .button-default {
+    border: 0 none;
+    font-family: "montserratlight";
+    padding: 8px 40px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+}
+.contact-form-area .button-default:hover {
+    background: #2d3e50 none repeat scroll 0 0;
+}
+/*End contact form area*/
+/*Comment area*/
+.comment-respond {
+    clear: both;
+    margin-top: 70px;
+}
+.comment-reply-title {
+    color: #323232;
+    font-size: 40px;
+    font-size: 2em;
+    font-weight: 300;
+}
+.comment-notes {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 1rem;
+    font-weight: 300;
+}
+p[class*='comment-form'] {
+    margin-bottom: 15px;
+}
+label {
+    clear: both;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.comment-form textarea,.comment-form input,.comment-form select{
+    width: 100% !important;
+    background-color: #fff;
+    border: 2px solid #eee;
+    color: #8f8f8f;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.comment-form textarea {
+    border: 1px solid #ddd;
+    color: #4c4c4c;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.comment-form textarea {
+    padding: 10px 8px;
+    max-width: 660px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.comment-form input[type="email"],.comment-form input[type="text"] {
+    -moz-appearance: none;
+    border: 1px solid #ddd;
+    color: #4c4c4c;
+    font-size: 24px;
+    font-size: 24px;
+    font-size: 1.5rem;
+    height: 36px;
+    max-width: 660px;
+    padding: 0 8px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.comment-form button{
+    font-weight: 700;
+    padding: 8px 35px;
+    border: 0;
+}
+input:focus, textarea:focus { 
+    outline: none !important;
+    border-color: #86bc42;
+    box-shadow: 0 0 2px #86bc42;
+}
 /****************************************/
 /*Mobile - tablet - responsive*/
 /****************************************/
@@ -2052,7 +2195,7 @@ span.comment-time {
     .mobile-menu-area{
         display: block;
     }
-    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container,.course-details-area .container {
+    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container,.course-details-area .container,.about-page-area .container,.contact-form-area .container {
         width: 450px;
     }
 	.about-area {
@@ -2245,6 +2388,9 @@ span.comment-time {
         float: none;
         font-size: 12px;
     }
+    .link-social {
+        margin-bottom: 45px;
+    }
 }
 @media (max-width: 480px){
     .hidden-480{
@@ -2256,7 +2402,7 @@ span.comment-time {
     .footer-widget-area .container{
         width: 300px;
     }
-    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container,.course-details-area .container  {
+    .course-area .container,.latest-area .container,.product-area .container,.news-details-area .container,.shop-grid-area .container,.course-details-area .container,.about-page-area .container,.contact-form-area .container  {
         width: auto;
     }
     /*--flexisel--*/
